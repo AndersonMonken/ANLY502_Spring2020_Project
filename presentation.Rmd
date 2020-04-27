@@ -1,0 +1,45 @@
+---
+title: 'Illuminating World Development'
+author: "Vid Chan, Anderson Monken, Doug Neumann, and Nicole Yoder"
+date: "April 28, 2020"
+output: ioslides_presentation
+
+---
+
+```{r setup, include = FALSE}
+library(knitr)
+opts_chunk$set(root.dir = '/home/anderson/ANLY502_Spring2020_Project/')
+library(htmltools)
+
+```
+
+## Motivation
+
+* How can we use big data to better understand developing countries?
+* Use satellites to track changes in GDP and track other measures social development
+* Can we see how oppressive regimes are affecting economic development when we know official statistics are wrong?
+
+## Dataset
+
+* Yearly Satellite data from NOAA 1993-2013
+* Used GeoPySpark to load and process the data
+* Polygonal mean of shape files for each country
+
+```{r, echo = FALSE}
+
+include_graphics('map_screenshot.png')
+```
+
+## EDA - light data processed
+
+<iframe src="light.html"></iframe>
+
+## EDA - light data indexed to 1993
+
+<iframe src="light_index.html"></iframe>
+
+## Next Steps
+
+* 
+* Monthly satellite data to track changes in "realtime"
+* Any questions?
