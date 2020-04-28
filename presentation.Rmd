@@ -16,14 +16,17 @@ library(htmltools)
 ## Motivation
 
 * How can we use big data to better understand developing countries?
-* Use satellites to track changes in GDP and track other measures social development
-* Can we see how oppressive regimes are affecting economic development when we know official statistics are wrong?
+* Can we figure out how to determine true economic data when official statistics are wrong or unavailable?
+* Use satellites to track changes in GDP and other measures social development
+
+<!--look to the night sky-->
 
 ## Dataset
 
 * Yearly Satellite data from NOAA 1993-2013
 * Used GeoPySpark to load and process the data
 * Polygonal mean of shape files for each country
+* We found out how annoying map projections can be in spark
 
 ```{r, echo = FALSE}
 
@@ -39,7 +42,7 @@ include_graphics('map_screenshot.png')
 <iframe src="light_index.html"></iframe>
 
 ## Next Steps
-
-* 
-* Monthly satellite data to track changes in "realtime"
-* Any questions?
+* Random forest regression RMSE = $5,838
+* Linear regression RMSE = $14,312
+* Try new model paramters and do more visualizations
+* Takeaways so far: using big data, Spark, Spark packages, geodata
