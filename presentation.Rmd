@@ -10,26 +10,27 @@ output: ioslides_presentation
 library(knitr)
 opts_chunk$set(root.dir = '/home/anderson/ANLY502_Spring2020_Project/')
 library(htmltools)
-
+library(graphics)
 ```
 
 ## Motivation
 
 * How can we use big data to better understand developing countries?
 * Can we figure out how to determine true economic data when official statistics are wrong or unavailable?
-* Use satellites to track changes in GDP and other measures social development
+* GOAL: Use satellites to track changes in light along with other traditional economic variables to predict GDP per capita
 
 <!--look to the night sky-->
 
-## Dataset
+## Data Prep
 
-* Yearly Satellite data from NOAA 1993-2013
-* Used GeoPySpark to load and process the data
-* Polygonal mean of shape files for each country
+* Yearly satellite data from NOAA 1993-2013
+* Other economic data sourced from World Bank, IMF, OECD
+* Used GeoPySpark to load and process the satellite data
+* Polygonal mean of shapes for each country using pycountry
 * We found out how annoying map projections can be in spark
 
-```{r, echo = FALSE}
-
+```{r, echo = FALSE, out.width='80%'}
+#include_graphics('night_sky.png')
 include_graphics('map_screenshot.png')
 ```
 
@@ -41,8 +42,12 @@ include_graphics('map_screenshot.png')
 
 <iframe src="light_index.html"></iframe>
 
-## Next Steps
-* Random forest regression RMSE = $5,838
+## Preliminary Results
+* Linear regression (mean light only) RMSE = $17,361
 * Linear regression RMSE = $14,312
-* Try new model paramters and do more visualizations
-* Takeaways so far: using big data, Spark, Spark packages, geodata
+* Random forest regression RMSE = $5,838
+
+## Summary
+* Try other mode types, model parameters, and do more visualizations
+
+<!-- using big data, Spark, Spark packages, geodata -->
