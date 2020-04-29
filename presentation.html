@@ -3134,7 +3134,7 @@ slide:not(.current) .plotly.html-widget{
 </article></slide><slide class=""><hgroup><h2>Data Prep</h2></hgroup><article  id="data-prep">
 
 <ul>
-<li>Yearly satellite data from NOAA 1993-2013</li>
+<li>Yearly satellite data from NOAA 1993-2013, 30 GB</li>
 <li>Other economic data sourced from World Bank, IMF, OECD</li>
 <li>Used GeoPySpark to load and process the satellite data</li>
 <li>Polygonal mean of shapes for each country using pycountry</li>
@@ -3166,20 +3166,30 @@ slide:not(.current) .plotly.html-widget{
 <li>Random forest regression RMSE = $5,683</li>
 </ul>
 
-</article></slide><slide class=""><hgroup><h2>Summary</h2></hgroup><article  id="summary">
-
-<p>Next steps:</p>
+</article></slide><slide class=""><hgroup><h2>Next Steps</h2></hgroup><article  id="next-steps">
 
 <ul>
 <li>Try other model types, model parameters, and do more visualizations</li>
 <li>Try subsets of developing countries to see if explanatory power increases</li>
 </ul>
 
+</article></slide><slide class=""><hgroup><h2>Summary</h2></hgroup><article  id="summary">
+
 <p>Challenges:</p>
 
 <ul>
-<li>We found out how difficult map projections can be in spark</li>
+<li>JVM Heapspace errors when processing the data</li>
+<li>We found out how difficult mercader projections can be in spark</li>
 <li>Island nations had very high light values, using index helped</li>
+</ul>
+
+<p>Takeaways:</p>
+
+<ul>
+<li>The wide variety of tools available to work with big data</li>
+<li>How to experiment with pyspark and parallel processing and get results</li>
+<li>How to optimize the core, heapspace, and memory parameters in Spark</li>
+<li>Prof. Vaisman should moonlight as a DJ</li>
 </ul>
 
 <!-- using big data, Spark, Spark packages, geodata --></article></slide>

@@ -24,7 +24,7 @@ library(graphics)
 
 ## Data Prep
 
-* Yearly satellite data from NOAA 1993-2013
+* Yearly satellite data from NOAA 1993-2013, 30 GB
 * Other economic data sourced from World Bank, IMF, OECD
 * Used GeoPySpark to load and process the satellite data
 * Polygonal mean of shapes for each country using pycountry
@@ -50,15 +50,24 @@ include_graphics('map_screenshot.png')
 * Linear regression RMSE = $13,691
 * Random forest regression RMSE = $5,683
 
-## Summary
-Next steps:
+## Next Steps
 
 * Try other model types, model parameters, and do more visualizations
 * Try subsets of developing countries to see if explanatory power increases
 
+## Summary
+
 Challenges:
 
-* We found out how difficult map projections can be in spark
+* JVM Heapspace errors when processing the data
+* We found out how difficult mercader projections can be in spark
 * Island nations had very high light values, using index helped
+
+Takeaways:
+
+* The wide variety of tools available to work with big data
+* How to experiment with pyspark and parallel processing and get results
+* How to optimize the core, heapspace, and memory parameters in Spark
+* Prof. Vaisman should moonlight as a DJ
 
 <!-- using big data, Spark, Spark packages, geodata -->
