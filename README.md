@@ -6,7 +6,7 @@ Here is a guide for the various files.
 
 
 ## Economic Data
-### Getting and cleaning data from four sources:
+### Getting and cleaning data from four sources (all located in Econ_Data_Sources folder):
 #### World Integrated Trade Solution
 Initial data: WITS_Export.csv, WITS_Import.csv
 
@@ -51,7 +51,7 @@ Merged/cleaned data: merged_data.pkl
 Code: models.ipynb
 
 ### Visualizations:
-()()() We should organize these in a folder once we are satisfied with them
+()()()
 
 ## Presentation
 presentation.Rmd, presentation.html
