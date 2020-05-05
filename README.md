@@ -51,7 +51,8 @@ Merging code: Merging_Light_Econ_Data.ipynb
 Merged/cleaned data: merged_data.pkl
 
 ### Visualizations:
-light_EDA.ipynb
+
+exploring light data: light_EDA.ipynb
 output graphs: light.html, light_index.html, light_gdp.html, light_gdp_index.html
 
 
