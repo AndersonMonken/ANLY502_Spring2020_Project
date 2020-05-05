@@ -40,18 +40,24 @@ Cleaned data: econ_data.csv
 
 ## Lights Data
 ### Getting and cleaning data:
-()()()
+downloading data: light_data_parallel_download.py
+processing nightlight data in geopyspark: nightlight_processing.ipynb
+ 
+processed data: lights_data.pkl, lights_data.csv
 
 ### Merging with the economic data:
 Merging code: Merging_Light_Econ_Data.ipynb
 
 Merged/cleaned data: merged_data.pkl
 
+### Visualizations:
+light_EDA.ipynb
+output graphs: light.html, light_index.html, light_gdp.html, light_gdp_index.html
+
+
 ### Building models:
 Code: models.ipynb
 
-### Visualizations:
-()()()
 
 ## Presentation
 presentation.Rmd, presentation.html
