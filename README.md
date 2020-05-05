@@ -55,7 +55,7 @@ Merged/cleaned data: merged_data.pkl
 
 exploring light data: light_EDA.ipynb
 
-output graphs: light.html, light_index.html, light_gdp.html, light_gdp_index.html
+output graphs: light.html, light_index.html, light_gdp.html, light_gdp_index.html, map_plot.png
 
 
 ### Building models:
